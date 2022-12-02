@@ -52,7 +52,7 @@ return (
 
           <Route path="/" element= { */}
           
-    <TextForm  showAlert={showAlert} heading ="Try TextUtils - Word Counter, Character Counter " 
+    <TextForm  showAlert={showAlert} heading ="Try TextUtils - word Counter, character Counter " 
       mode={mode}/>
           
           {/* //  }/> */}
