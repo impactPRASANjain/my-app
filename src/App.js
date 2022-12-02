@@ -32,38 +32,26 @@ const toggleMode = ()=>{
       setMode ('dark') ;
       document.body.style.backgroundColor ='#042743';
       showAlert("Dark mode has been enabled","success");
-      // document.title = 'TextUtils - Dark Mode';
+      
     }
     else{
       setMode ('light');
       document.body.style.backgroundColor = 'white';
       showAlert("Light mode has been enabled","success");
-      // document.title = 'TextUtils - Light Mode';
+      
     }
 }  
 
 return (
     <>
-     {/* <Router> */}
     <Navbar title="Textutils" mode={mode} toggleMode={toggleMode}/>
     <Alert alert={alert}/>
      <div className='container my-3'>
-         {/* <Routes>
-
-          <Route path="/" element= { */}
-          
+         
     <TextForm  showAlert={showAlert} heading ="Try TextUtils - word Counter, character Counter " 
       mode={mode}/>
-          
-          {/* //  }/> */}
-
-          {/* <Route path="/about" element={<About />}/> */}
-            
-          
-     {/* </Routes> */}
-     </div>
-     {/* </Router> */}
-     
+      
+     </div>     
    </>
    );
 }
